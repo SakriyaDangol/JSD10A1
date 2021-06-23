@@ -18,18 +18,13 @@ para2.innerHTML = `Things cats love:` ;
 const uList = document.createElement('ul');
 document.body.appendChild(uList);
 
-const ulLi = document.createElement('li');
-const ulText = ['asdasdasd'];
-uList.appendChild(ulLi);
-ulLi.innerHTML = ['asdasd', 'asdasd'];
+const ulLi = `
+    <li> cat nip </li>
+    <li> laser pointer </li>
+    <li> lasagna </li>
+`;
 
-// for (let i=0; i<list.length; i++){
-//     var list = [`cat nip`, `laser pointer`, `lasagna`];
-//     if(list[i]){
-//         input = list[i];
-//     }
-//     uList.appendChild(input);
-// }     
+uList.innerHTML = ulLi;
 
 const para3 = document.createElement('p');
 document.body.appendChild(para3);
@@ -38,6 +33,10 @@ para3.innerHTML = `Top 3 things cats hate:` ;
 const oList = document.createElement('ol');
 document.body.appendChild(oList);
 
-const olLi = document.createElement('li');
+const olLi = `
+    <li> flea treatment </li>
+    <li> thunder </li>
+    <li> other cats </li>
+`;
 
-oList.appendChild(olLi);
+oList.innerHTML = olLi;
